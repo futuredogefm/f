@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>No.3| 表單</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <meta content="url" property="og:type">
+    <meta content='https://www.facebook.com/Future-DOGE-FM-415019592213241/' property='article:author'>
+    <meta content="No.3" property="og:title">
+    <meta content="futuredogefm.updog.co" property="og:url">
+    <meta content='img/facebook.png' property='og:image'>
+    <meta content='網頁設計作業，第三組內容呈現。' property='og:description'>
+    <meta content="No.3" property="og:site_name">
+    <link href="dist/lity.css" rel="stylesheet">
+    <script src="vendor/jquery.js">
+    </script>
+    <script src="dist/lity.js">
+    </script>
+
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <link href="css/color.css" rel="stylesheet" type="text/css">
+    <style>
+        .updog-stamp {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">▲</button>
+    <div id="nav">
+        <div id="navk">
+            <div class="menu">
+                <ul>
+                    <li>
+                        <a href="index.html">首頁</a>
+                    </li>
+                    <li>
+                        <a href="about.html">關於</a>
+                    </li>
+                    <li>
+                        <a href="works.html" id="thispage">作業</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="webtitle">
+        <a href="index.html"><img alt="No.3" src="img/logo.png" title="No.3"></a>
+    </div>
+    <div id="all01">
+        <div id="left">
+            <div class="txt">
+                <h1>第四次作業</h1>
+                <a data-lity="" data-lity-desc="我的照片" href="img/logobg.png">
+                    <div class="fullphoto color-lightgreen"><img alt="No.3" src="img/logobg.png" title="No.3"></div>
+                </a>
+                <p>第三組製作</p>
+
+                <h2>清單與表格</h2>
+                <h3>清單</h3>
+                <form>
+                    <label for="account">帳號</label>
+
+                    <input type="text" name="firstname" placeholder="輸入帳號" required>
+                    <label for="password">密碼</label>
+
+                    <input type="password" name="password" placeholder="輸入密碼" required>
+
+                    <button type="submit" class="button">送出</button>
+				</form><form>
+                    <h3>測試</h3>
+
+                    <label for="title">標題</label>
+
+                    <input type="text" id="title" name="title" placeholder="標題">
+
+                    <label>
+                        <input type="checkbox" name="top" value="1"> 置頂
+                    </label>
+                    <label for="title">選擇</label>
+                    <input type="radio" name="sex" value="male">男
+                    <input type="radio" name="sex" value="female">女
+
+                    <label for="title">預設選擇</label>
+                    <input type="radio" name="size" value="1">11111
+                    <input type="radio" name="size" value="2">22222
+                    <input type="radio" name="size" value="3" checked>33333
+                    <input type="radio" name="size" value="5">55555
+
+                    <label for="file">上傳附件</label>
+					<script>
+    $(function(){           
+        if (!Modernizr.inputtypes.date) {
+        // If not native HTML5 support, fallback to jQuery datePicker
+            $('input[type=date]').datepicker({
+                // Consistent format with the HTML5 picker
+                    dateFormat : 'yy-mm-dd'
+                },
+                // Localization
+                $.datepicker.regional['it']
+            );
+        }
+    });
+</script>
+                    <input class="upload" type="file" name="file[]" id="file">
+                    <label for="file">發佈時間(年-月-日 時:分:秒)</label>
+
+                    <input type="date" name="date" value="1900-01-01" min="1900-01-01" max="2018-12-12">
+                    
+                    <label for="author">文章內容</label>
+                    <br>
+                    <textarea name="content" value="輸入文字內容" placeholder="輸入文字內容">
+                    </textarea>
+
+                    <button type="submit" class="button" name="send" value="send">發佈</button>
+
+                </form>
+
+            </div>
+
+        </div>
+        <div id="right">
+            <div class="txt">
+                <p></p>
+                <h1><b>側欄</b></h1>
+                <p></p>
+                <div class="rightb"></div>
+                <p>No.3上課專用網站。</p>
+            </div>
+        </div>
+
+    </div>
+    </div>
+    </div>
+    </div>
+    <div id="footer">
+        <strong>Design By <a href="https://www.facebook.com/Future-DOGE-FM-415019592213241/">Future DOGE FM</a><br>
+						嚴禁任何形式轉載、仿冒<br>
+						©2017 No.3 Studio. All Rights Reserved
+						</strong>
+        <img src="https://media.fc2.com/counter_img.php?id=1785" width="1" height="1">
+
+    </div>
+    <script>
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function() {
+            scrollFunction()
+        };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                document.getElementById("myBtn").style.display = "block";
+            } else {
+                document.getElementById("myBtn").style.display = "none";
+            }
+        } // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+	
+</body>
+
+</html>
